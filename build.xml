@@ -8,7 +8,7 @@
   <property name="build" location="build"/>
   <property name="dist"  location="dist"/>
   <property name="test"  location="test"/>
-  <property name="junit" location="lib/junit-4.12.jar"/>
+  <property name="junit" location="junit-4.12.jar"/>
 
   <path id="classpath.test">
     <pathelement location="${junit}" />
@@ -26,7 +26,7 @@
 
   <target name="compile" depends="init" description="compile">
     <javac debug="true" includeantruntime="true" srcdir="${src}" destdir="${build}/main"/>
-    <javac classpath="lib/junit-4.12.jar" srcdir="${test}" destdir="${build}/test">
+    <javac classpath="junit-4.12.jar" srcdir="${test}" destdir="${build}/test">
       <classpath>
 	<pathelement location="${junit}"/>
       </classpath>

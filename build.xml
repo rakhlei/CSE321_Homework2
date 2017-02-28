@@ -25,8 +25,8 @@
   </target>
 
   <target name="compile" depends="init" description="compile">
-    <javac includeantruntime="false" srcdir="${src}" destdir="${build}/main"/>
-    <javac classpath="lib/junit.jar" srcdir="${test}" destdir="${build}/test">
+    <javac debug="true" includeantruntime="true" includeantruntime="false" srcdir="${src}" destdir="${build}/main"/>
+    <javac classpath="/lib/junit.jar" srcdir="${test}" destdir="${build}/test">
       <classpath>
 	<pathelement location="${junit}"/>
       </classpath>

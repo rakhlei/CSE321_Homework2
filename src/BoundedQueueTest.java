@@ -136,15 +136,4 @@ public class BoundedQueueTest {
 		assertEquals("[0]", s);
 	}
 
-	/**
-	 * Test to evaluate the toString Method Queue instantiated and left empty.
-	 * Test Asserts Equals if the method equals the expected output.
-	 */
-
-	@Test
-	public void testEmptyToString() {
-		String s = Q1.toString();
-		assertEquals("[]", s);
-	}
-
 }

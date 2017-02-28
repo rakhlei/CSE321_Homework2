@@ -61,15 +61,6 @@
             <classpath refid="CSE321_Homework2.classpath"/>
         </junit>
     </target>
-    <target name="calcTest">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="BoundedQueueTest" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="CSE321_Homework2.classpath"/>
-        </junit>
-    </target>
     <target name="junitreport">
         <junitreport todir="${junit.output.dir}">
             <fileset dir="${junit.output.dir}">

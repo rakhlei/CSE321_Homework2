@@ -1,3 +1,5 @@
 language: java
 sudo: required
+before_install:
+  - cd java
 script: junit BoundedQueueTest.java
